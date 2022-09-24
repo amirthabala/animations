@@ -1,0 +1,61 @@
+.timeline-container {
+	/* background-color: #03011f; */
+	font-family: "Source Sans Pro";
+	/* color: #6cacc5; */
+	padding-bottom: 50px;
+}
+
+ul li {
+	position: relative;
+	list-style-type: none;
+	width: 6px;
+	background-color: #03011f;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+ul li::after {
+	background: #03011f;
+	content: "";
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+}
+
+ul li div {
+	position: relative;
+	width: 400px;
+	padding: 15px;
+	border-radius: 5px;
+	bottom: 0;
+	background: rgba(74, 74, 75);
+	color: beige;
+	/* transition: all 0.5s ease-in-out; */
+}
+
+ul li:nth-child(odd) div {
+	left: 130px;
+	animation: slide-left 1.5s forwards;
+}
+
+ul li:nth-child(even) div {
+	left: -520px;
+	/* transform: translate3d(-200px, 0, 0); */
+	animation: slide-right 1.5s forwards;
+}
+
+@keyframes slide-left {
+	100% {
+		left: 55px;
+	}
+}
+
+@keyframes slide-right {
+	100% {
+		left: -445px;
+	}
+}

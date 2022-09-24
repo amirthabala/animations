@@ -1,10 +1,10 @@
 import "./App.css";
-import Loader from "./components/Loader/Loader";
+import Timeline from "./components/Timeline/Timeline";
 
 function App() {
 	return (
 		<div className="App">
-			<Loader />
+			<Timeline />
 		</div>
 	);
 }
