@@ -1,10 +1,10 @@
 import "./App.css";
-import Spinner from "./components/Spinner/Spinner";
+import Loader from "./components/Loader/Loader";
 
 function App() {
 	return (
 		<div className="App">
-			<Spinner />
+			<Loader />
 		</div>
 	);
 }
