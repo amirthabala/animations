@@ -1,0 +1,18 @@
+.logo-container {
+	height: 50px;
+	width: 50px;
+	position: relative;
+	top: -63%;
+	left: 23.5%;
+}
+
+svg polygon {
+	stroke-dasharray: 50;
+	animation: dashoffset 1.5s linear infinite;
+}
+
+@keyframes dashoffset {
+	to {
+		stroke-dashoffset: 100;
+	}
+}
